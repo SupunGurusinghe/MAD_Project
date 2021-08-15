@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int REQUEST_CODE_ADD_PASSWORD = 1;
     public static boolean isSet = true;
 
+    private ImageView imageBack;
 
     private AlertDialog dialogSetPassword;
 
@@ -37,6 +38,17 @@ public class MainActivity extends AppCompatActivity {
                     showSetPasswordDialog();
                 }
 
+            }
+        });
+
+        //come back
+        imageBack = findViewById(R.id.imageBack);
+        imageBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(
+                        new Intent(MainActivity.this, HomeActivity.class)
+                );
             }
         });
     }
