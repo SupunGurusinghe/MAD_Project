@@ -15,7 +15,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     public static final int REQUEST_CODE_ADD_PASSWORD = 1;
-    public static boolean isSet = true;
+    public static boolean isSet = false;
 
     private ImageView imageBack;
 
